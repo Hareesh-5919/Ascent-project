@@ -1,0 +1,40 @@
+//api to post a movie
+post http://localhost:3005/movies/
+Content-Type: application/json
+
+{
+    "movieId": 2,
+    "movieName":"sahoo",
+    "leadActor":"prabhas"
+}
+###
+
+
+//api to get all movies 
+get http://localhost:3005/movies/
+### 
+
+
+//api to get a particular movie
+get http://localhost:3005/movies/2/
+###
+
+
+// api to update a movie 
+put http://localhost:3005/movies/2
+Content-Type: application/json
+
+{
+    "movieId": 2,
+    "movieName":"sahoo",
+    "leadActor":"prabhas"
+}
+###
+
+
+//api to delete a movie
+delete http://localhost:3005/movies/2/
+
+
+
+
